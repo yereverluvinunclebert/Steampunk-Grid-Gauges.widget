@@ -6,6 +6,7 @@ Apple Mac.
 
 ![steampunk-gauge02](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/a87bf362-1c7d-43d5-aec6-1e517c03e366)
 
+![powerGridGauge002](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/80a7d4f4-90e8-4001-b386-2514eef753cf)
 
 The Steampunk-Grid-Gauges widget is an attractive Steampunk Yahoo widget for 
 your desktop. It is a series of electrical generation and consumption gauges for 
