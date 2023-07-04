@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<!--name>Steampunk Grid Gauges</name-->
+<version>1.1</version>
+<identifier>c2d9d7b0-975c-11e5-b057-10ddb1aa18b4</identifier>
+<image usage="dock" src="Resources/Images/dock.png"/>
+<image usage="security" src="Resources/Images/security.png"/>
+<author name="Dean Beedell and Harry Whitfield"/>
+<copyright>© 2015 Dean Beedell and Harry Whitfield</copyright>
+<description>Displays data about the UK and French electricity grids.</description>
+<platform minVersion="4.5"/>
+<security>
+	<http>www.mainsfrequency.com</http>
+	<http>www.gridwatch.templar.co.uk</http>
+	<filesystem>full</filesystem>
+	<command>true</command>
+	<com name="Yahoo! Widgets">YahooWidgetEngine.Application</com>
+</security>
+</metadata>

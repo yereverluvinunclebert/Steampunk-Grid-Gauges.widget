@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget minimumVersion="4.5">
+    <!--
+	Grid Gauges - Displays electricity grid gauges
+	Copyright © 2015 Dean Beedell and Harry Whitfield
+
+	This program is free software; you can redistribute it and/or modify it
+	under the terms of the GNU General Public licence as published by the
+	Free Software Foundation; either version 2 of the licence, or (at your
+	option) any later version.
+
+	This program is distributed in the hope that it will be useful, but
+	WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	See the GNU
+	General Public licence for more details.
+
+	You should have received a copy of the GNU General Public licence along
+	with this program; if not, write to the Free Software Foundation, Inc.,
+	51 Franklin St, Fifth Floor, Boston, MA	02110-1301	USA
+
+	Grid Gauges - version 1.1
+	17 Decenber, 2015
+	Copyright 2015 Dean Beedell and Harry Whitfield
+	mailto:g6auc@arrl.net
+    -->
+
+	<settings>
+		<setting name="allowCustomObjectAttributes" value="true"/>
+		<setting name="debug" value="off"/>
+	</settings>
+
+	<about-box>
+		<image>Resources/Images/About.png</image>
+		<about-text font="Helvetica Bold" color="#000000" vOffset="95" hOffset="81" data="Grid Gauges" size="14"/>
+		<about-text font="Helvetica" color="#000000" vOffset="110" hOffset="81" data="dean beedell and harry whitfield" size="12"/>
+		<about-text font="Helvetica" color="#000000" vOffset="135" hOffset="81" data="data - mains frequency eu" url="http://www.mainsfrequency.com" size="10"/>
+		<about-text font="Helvetica" color="#000000" vOffset="150" hOffset="81" data="data - gridwatch uk and france" url="http://www.gridwatch.templar.co.uk" size="10"/>
+		<about-text font="Helvetica" color="#000000" vOffset="165" hOffset="81" data="steampunk graphics - dean beedell" size="10"/>
+		<about-text font="Helvetica" color="#000000" vOffset="180" hOffset="81" data="about and licence windows - ricky romero" size="10"/>
+		<about-text font="Helvetica Bold" color="#000000" vOffset="205" hOffset="81" data="version" size="10"/>
+		<about-version font="Helvetica Bold" color="#000000" vOffset="205" hOffset="118" size="10"/>
+		<about-text font="Helvetica" color="#565b5f" vOffset="205" hOffset="145" data="© 2015 dean beedell and harry whitfield" size="10"/>
+	</about-box>
+
+    <preference title="Scale:" name="scalePref" type="slider" description="Choose the size of the gauge." defaultValue="100" minLength="50" maxLength="150" ticks="21">
+        <tickLabel>50</tickLabel>
+        <tickLabel>75</tickLabel>
+        <tickLabel>100</tickLabel>
+        <tickLabel>125</tickLabel>
+        <tickLabel>150</tickLabel>
+    </preference>
+
+    <preference hidden="false"
+        description="Check this box to show only the basic gauge - removes the outer ring."
+        name="noRingPref" title="Remove Outer Ring"
+        defaultValue="0" type="checkbox"/>
+
+	<preference title="Gauge:" name="gaugePref" type="popup" description="Choose the gauge to be displayed." defaultValue="Demand UK 20 60 20">
+        <option>Demand UK</option>
+        <optionValue>Demand UK 20 60 20</optionValue>
+	</preference>
+
+	<preference title="Polling Interval:" name="pollingPref" type="slider"
+        description="Choose the polling interval (applies only to Frequency Europe)."
+        defaultValue="1" minLength="1" maxLength="5" ticks="9">
+        <tickLabel>1</tickLabel>
+        <tickLabel>2</tickLabel>
+        <tickLabel>3</tickLabel>
+        <tickLabel>4</tickLabel>
+        <tickLabel>5</tickLabel>
+    </preference>
+
+    <preference name="timeoutPref">
+		<title>Network Timeout:</title>
+		<type>popup</type>
+		<hidden>false</hidden>
+		<option>5 seconds</option>
+		<optionValue>5</optionValue>
+		<option>10 seconds</option>
+		<optionValue>10</optionValue>
+		<option>15 seconds</option>
+		<optionValue>15</optionValue>
+		<option>30 seconds</option>
+		<optionValue>30</optionValue>
+		<option>1 minute</option>
+		<optionValue>60</optionValue>
+		<option>2 minutes</option>
+		<optionValue>120</optionValue>
+		<defaultValue>15</defaultValue>
+		<description>Set the timeout interval for network fetches.</description>
+	</preference>
+
+	<preference hidden="true" name="restartListPref" type="text" defaultValue=""/>
+
+	<preference hidden="false" description="Choose how you want spawned widgets to be handled." name="newSpawnPref" title="Spawned Widgets:" defaultValue="Are Restarted" type="popup">
+		<option>Are Restarted</option>
+		<option>Are Left Alone</option>
+		<option>Are Deleted</option>
+	</preference>
+
+	<preference hidden="true" name="newChildPref" title="New Child" defaultValue="0" type="checkbox" description=""/>
+
+	<preference hidden="true" name="spawnKonFilePref" title="Spawned Kon File" type="text" defaultValue="" description=""/>
+
+	<preference hidden="true" name="versionPref" defaultValue="1.1" type="text"/>
+
+   <preference hidden="false"
+        description="Check this box to enable writing of frequency data to the log file."
+        name="logFlagPref" title="Log Frequency Data to File"
+        defaultValue="0" type="checkbox"/>
+
+    <preference hidden="false" description="Choose the location and name of the log file."
+        name="logFilePref" style="save" title="Log File" type="selector">
+        <defaultValue/>
+    </preference>
+
+    <preference name="valuePref" title="Meter Value:" type="text" defaultValue="" hidden="true"
+		 description="Enter a value between the minValue and maxValue for this gauge."/>
+
+	<window visible="false" name="main_window" width="310" title="Grid Gauges" height="310" shadow="false">
+		<image opacity="255" vOffset="6" name="rubberSurround" src="Resources/Images/rubberSurround.png" width="302" hOffset="6" height="304"/>
+
+		<!--image opacity="255" vOffset="6" name="gaugeBody" src="Resources/Images/gaugeBody.png" width="302" hOffset="6" height="304"/-->
+		<image opacity="255" vOffset="31" name="gaugeBody" src="Resources/Images/gaugeBody.png" width="258" hOffset="28" height="282"/>
+
+		<image opacity="255" vOffset="113" name="counterHole5" src="Resources/Images/counterHole5.png" width="20" hOffset="178" height="37"/>
+		<image opacity="255" vOffset="113" name="counterHole4" src="Resources/Images/counterHole4.png" width="20" hOffset="162" height="37"/>
+		<image opacity="255" vOffset="113" name="counterHole3" src="Resources/Images/counterHole3.png" width="20" hOffset="146" height="37"/>
+		<image opacity="255" vOffset="113" name="counterHole2" src="Resources/Images/counterHole2.png" width="20" hOffset="126" height="37"/>
+		<image opacity="255" vOffset="113" name="counterHole1" src="Resources/Images/counterHole1.png" width="20" hOffset="110" height="37"/>
+
+		<image opacity="255" vOffset="125" name="digit5" src="Resources/Images/9.png" width="10" hOffset="183" height="12"/>
+		<image opacity="255" vOffset="125" name="digit4" src="Resources/Images/9.png" width="10" hOffset="167" height="12"/>
+		<image opacity="255" vOffset="125" name="digit3" src="Resources/Images/9.png" width="10" hOffset="151" height="12"/>
+		<image opacity="255" vOffset="125" name="digit2" src="Resources/Images/9.png" width="10" hOffset="131" height="12"/>
+		<image opacity="255" vOffset="125" name="digit1" src="Resources/Images/9.png" width="10" hOffset="115" height="12"/>
+
+		<!--image opacity="133" vOffset="55" name="dialRasterised" src="Resources/Images/dialRasterised.png" width="193" hOffset="55" height="101"/-->
+		<image opacity="133" vOffset="0" name="scaleRasterised" src="Resources/Images/scaleRasterised.png" width="310" hOffset="0" height="310"/>
+
+		<text hRegistrationPoint="0" opacity="255" rotation="-75" vRegistrationPoint="81" vOffset="155" name="text5" data="20" width="26" hOffset="152" height="11" hAlign="center" style="text-align:center;font-size: 11px"/>
+		<text hRegistrationPoint="0" opacity="255" rotation="-37" vRegistrationPoint="82" vOffset="155" name="text4" data="30" width="26" hOffset="152" height="11" hAlign="center" style="text-align:center;font-size: 11px"/>
+		<text hRegistrationPoint="0" opacity="255" rotation="0"   vRegistrationPoint="83" vOffset="155" name="text3" data="40" width="26" hOffset="152" height="11" hAlign="center" style="text-align:center;font-size: 11px"/>
+		<text hRegistrationPoint="0" opacity="255" rotation="37"  vRegistrationPoint="82" vOffset="155" name="text2" data="50" width="26" hOffset="152" height="11" hAlign="center" style="text-align:center;font-size: 11px"/>
+		<text hRegistrationPoint="0" opacity="255" rotation="75"  vRegistrationPoint="81" vOffset="155" name="text1" data="60" width="26" hOffset="152" height="11" hAlign="center" style="text-align:center;font-size: 11px"/>
+
+		<!--image hRegistrationPoint="14" opacity="255" rotation="0" vRegistrationPoint="101" vOffset="171" name="hand" src="Resources/Images/hand.png" width="38" hOffset="152" height="118"/-->
+		<image hRegistrationPoint="14" opacity="255" rotation="0" vRegistrationPoint="91" vOffset="161" name="hand" src="Resources/Images/hand.png" width="38" hOffset="152" height="108"/>
+
+		<image opacity="122" vOffset="63" name="layer21" src="Resources/Images/layer21.png" width="147" hOffset="62" height="113"/>
+
+		<!--image opacity="255" vOffset="163" name="rimRubyHoleCopy2" src="Resources/Images/rimRubyHoleCopy2.png" width="19" hOffset="144" height="19"/-->
+		<image opacity="255" vOffset="153" name="rimRubyHoleCopy2" src="Resources/Images/rimRubyHoleCopy2.png" width="19" hOffset="144" height="19"/>
+
+		<image opacity="224" vOffset="88" name="windowReflection" src="Resources/Images/windowReflection.png" width="84" hOffset="172" height="62"/>
+		<image opacity="255" vOffset="4" name="outerring2" src="Resources/Images/outerring2.png" width="301" hOffset="4" height="300"/>
+
+		<image opacity="255" vOffset="225" name="unit"  src="Resources/Images/gw.png"   width="26" hOffset="152" height="11" hAlign="center"/>
+		<image opacity="255" vOffset="241" name="source" src="Resources/Images/demand.png" width="52" hOffset="152" height="11" hAlign="center"/>
+
+		<image opacity="255" vOffset="200" opacity="0" name="closeButton" alignment="left" src="Resources/Images/Close Spawn.png" width="32" hOffset="65"   height="32" tooltip="Close this instance of Steampunk Grid Gauges."/>
+		<image opacity="255" vOffset="270" opacity="0" name="spawnButton" alignment="left" src="Resources/Images/New Spawn.png"   width="32" hOffset="270" height="32" tooltip="Spawn a new instance of Steampunk Grid Gauges."/>
+
+	</window>
+
+  <prefGroup name="development" order="8" icon="Resources/images/development-icon.png" title="Development"/>
+   <preference hidden="false" description="Turning on the debugging will provide extra information in the debug window. To obtain the debug window press SHIFT+CTRL simultaneously whilst right clicking on the Yahoo widget systray icon, then select debug from the drop down menu. You will need to restart the widget properly rather than doing a simple restart for debugging information to appear." name="debugflgPref" group="development" title="Debug:" defaultValue="1" type="popup">
+        <option>Debug OFF</option>
+        <optionValue>0</optionValue>
+        <option>Debug ON</option>
+        <optionValue>1</optionValue>
+    </preference>
+   <preference hidden="false" description="Default command to run when the gauge receives a double-click. %SystemRoot%/system32/perfmon.exe" name="imageCmdPref" group="development" title="Double-Click command" defaultValue="%SystemRoot%/system32/perfmon.exe" type="text"/>
+   <preference hidden="false" description="Development ONLY: Enter your editor path here along with any command line switches required to open this widget in the editor. This function only operates if the widget has been unpacked and DEBUG is ON. " name="imageEditPref" group="development" title="Default Editor:" defaultValue="" type="text"/>
+
+
+	<action trigger="onLoad">
+		<![CDATA[
+		include('Resources/Scripts/functions.js');
+		include('Resources/Scripts/script.js');
+		include('Resources/Scripts/script2.js');
+		include('Resources/licence/licence.js');
+		createlicence(main_window);
+		]]>
+	</action>
+
+	<preference hidden="true" description="Check this box if you don't want to see the licence Conditions again." name="licenceHide" title="Don't Show licence Again" defaultValue="0" type="checkbox"/>
+</widget>

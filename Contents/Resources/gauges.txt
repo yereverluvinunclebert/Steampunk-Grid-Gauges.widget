@@ -1,0 +1,35 @@
+Demand UK 20 60 20
+Frequency UK 49.8 50.2 0
+Biomass UK 0 4 4
+CCGT UK 0 20 20
+Coal UK 0 20 20
+Hydro UK 0 4 4
+Nuclear UK 0 20 20
+OCGT UK 0 2 2
+Oil UK 0 2 2
+Pumped UK 0 2 2
+Wind UK 0 8 4
+DutchICT UK 0 2 2
+E-WICT UK 0 2 2
+FrenchICT UK 0 4 4
+IrishICT UK 0 2 2
+-
+Demand France 40 80 20
+FrequencyF France 49.8 50.2 0
+Biomass France 0 4 4
+Coal France 0 4 4
+Gas France 0 8 4
+Hydro France 0 20 20
+Nuclear France 20 60 20
+Oil France 0 4 4
+Pumped France 0 2 2
+Solar France 0 2 2
+Wind France 0 8 4
+Belgium France 0 4 4
+Germany France 0 4 4
+Italy France 0 4 4
+Spain France 0 4 4
+Switzerland France 0 4 4
+UK France 0 4 4
+-
+FrequencyEU Europe 49.8 50.2 0
