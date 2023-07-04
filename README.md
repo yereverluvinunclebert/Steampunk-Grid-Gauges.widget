@@ -1,4 +1,6 @@
 # Steampunk-Grid-Gauges.widget
+
+![steampunkGridAbout003](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/3ac73b3c-e0f0-403c-93a9-079af04def42)
  
 Steampunk-Grid-Gauges Yahoo Widget, written in Javascript and XML for the Yahoo 
 Widget (Konfabulator) Engine. Created for XP, Vista, Win7, 8, 10+ as well as the 
@@ -8,15 +10,15 @@ Apple Mac.
 
 The core widget design.
 
-![powerGridGauge002](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/80a7d4f4-90e8-4001-b386-2514eef753cf)
-
-Widget zoomed to maximum size.
-
 The Steampunk-Grid-Gauges widget is an attractive Steampunk Yahoo widget for 
 your desktop. It is a series of electrical generation and consumption gauges for 
 the UK electricity generating network. Functional and gorgeous at the same time. 
 This Widget is a moveable widget that you can move anywhere around the desktop 
 as you require.
+
+![powerGridGauge002](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/80a7d4f4-90e8-4001-b386-2514eef753cf)
+
+Widget zoomed to maximum size.
 
 When you first run the widget it will default to displaying the UK current 
 electricity consumption. A right click on the prefs will allow you to select 
