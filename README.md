@@ -28,6 +28,8 @@ ever would have.
 
 -oOo-
 
+![steampunkCoal](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/fb513bc1-671e-4bf4-af31-f2281635235a)
+
 The above gauge shows coal-consumption by the UK's coal-fired power stations, a real-time 
 gauge that takes its information via a real-time feed from powergen, the UK 
 national power generating organisation.
