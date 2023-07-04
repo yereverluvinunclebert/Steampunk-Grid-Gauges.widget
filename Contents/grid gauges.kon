@@ -31,15 +31,14 @@
 
 	<about-box>
 		<image>Resources/Images/About.png</image>
-		<about-text font="Helvetica Bold" color="#000000" vOffset="95" hOffset="81" data="Grid Gauges" size="14"/>
-		<about-text font="Helvetica" color="#000000" vOffset="110" hOffset="81" data="dean beedell and harry whitfield" size="12"/>
-		<about-text font="Helvetica" color="#000000" vOffset="135" hOffset="81" data="data - mains frequency eu" url="http://www.mainsfrequency.com" size="10"/>
-		<about-text font="Helvetica" color="#000000" vOffset="150" hOffset="81" data="data - gridwatch uk and france" url="http://www.gridwatch.templar.co.uk" size="10"/>
-		<about-text font="Helvetica" color="#000000" vOffset="165" hOffset="81" data="steampunk graphics - dean beedell" size="10"/>
-		<about-text font="Helvetica" color="#000000" vOffset="180" hOffset="81" data="about and licence windows - ricky romero" size="10"/>
-		<about-text font="Helvetica Bold" color="#000000" vOffset="205" hOffset="81" data="version" size="10"/>
-		<about-version font="Helvetica Bold" color="#000000" vOffset="205" hOffset="118" size="10"/>
-		<about-text font="Helvetica" color="#565b5f" vOffset="205" hOffset="145" data="© 2015 dean beedell and harry whitfield" size="10"/>
+
+		<about-text font="times new roman" color="#000000" vOffset="265" hOffset="81" data="data - mains frequency eu" url="http://www.mainsfrequency.com" size="13"/>
+		<about-text font="times new roman" color="#000000" vOffset="280" hOffset="81" data="data - gridwatch uk and france" url="http://www.gridwatch.templar.co.uk" size="13"/>
+		<about-text font="times new roman" color="#000000" vOffset="295" hOffset="81" data="steampunk graphics - dean beedell" size="13"/>
+		<about-text font="times new roman" color="#000000" vOffset="310" hOffset="81" data="licence window - ricky romero" size="13"/>
+		<about-text font="times new roman Bold" color="#000000" vOffset="335" hOffset="41" data="version" size="13"/>
+		<about-version font="times new roman Bold" color="#000000" vOffset="335" hOffset="83" size="13"/>
+		<about-text font="times new roman" color="#565b5f" vOffset="335" hOffset="110" data="© 2015 dean beedell and harry whitfield" size="10"/>
 	</about-box>
 
     <preference title="Scale:" name="scalePref" type="slider" description="Choose the size of the gauge." defaultValue="100" minLength="50" maxLength="150" ticks="21">
