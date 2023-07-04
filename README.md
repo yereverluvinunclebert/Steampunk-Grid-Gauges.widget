@@ -5,7 +5,6 @@ Widget (Konfabulator) Engine. Created for XP, Vista, Win7, 8, 10+ as well as the
 Apple Mac.
 
 
-
 The Steampunk-Grid-Gauges widget is an attractive Steampunk Yahoo widget for 
 your desktop. It is a series of electrical generation and consumption gauges for 
 the UK electricity generating network. Functional and gorgeous at the same time. 
@@ -16,7 +15,7 @@ The graphics are my own. This widget was created with the serious coding skills
 of Harry Whitfield. I supplied the graphics, made some ephemeral changes and 
 helped steered the widget toward its final goal. I also tested the widget and added 
 a little extra functionality. Harry built the core and did it far better than I 
-would ever have.
+ever would have.
 
 The widget can be resized - Hover the cursor over the widget. Press the CTRL key 
 and use your mousewheel up or down. The widget will resize dynamically.
@@ -28,19 +27,20 @@ provide.
 
 Built using: 
 
-  RJTextEd Advanced Editor  https://www.rj-texted.se/ 
-  Adobe Photoshop CS ver 8.0 (2003)  https://www.adobe.com/uk/products/photoshop/free-trial-download.html  
-
+	RJTextEd Advanced Editor  https://www.rj-texted.se/ 
+	Adobe Photoshop CS ver 8.0 (2003)  https://www.adobe.com/uk/products/photoshop/free-trial-download.html  
+	Yahoo Widgets SDK: engine (Konfabulator), debugger & documentation
+  
 Tested on :
 
-  ReactOS 0.4.14 32bit on virtualBox    
-  Windows 7 Professional 32bit on Intel    
-  Windows 7 Ultimate 64bit on Intel    
-  Windows 7 Professional 64bit on Intel    
-  Windows XP SP3 32bit on Intel    
-  Windows 10 Home 64bit on Intel    
-  Windows 10 Home 64bit on AMD    
-  Windows 11 64bit on Intel  
+	ReactOS 0.4.14 32bit on virtualBox    
+	Windows 7 Professional 32bit on Intel    
+	Windows 7 Ultimate 64bit on Intel    
+	Windows 7 Professional 64bit on Intel    
+	Windows XP SP3 32bit on Intel    
+	Windows 10 Home 64bit on Intel    
+	Windows 10 Home 64bit on AMD    
+	Windows 11 64bit on Intel  
   
    
  Dependencies:
@@ -49,14 +49,12 @@ Tested on :
  
  o Installation of the yahoo widget SDK runtime engine  
  
-  Yahoo widget engine for Windows - http://g6auc.me.uk/ywidgets_sdk_setup.exe  
-  Yahoo widget engine for Mac - https://rickyromero.com/widgets/downloads/yahoo-widgets-4.5.2.dmg
+	Yahoo widget engine for Windows - http://g6auc.me.uk/ywidgets_sdk_setup.exe  
+	Yahoo widget engine for Mac - https://rickyromero.com/widgets/downloads/yahoo-widgets-4.5.2.dmg
 
 Running the widget using a javascript engine frees javascript from running only 
 within the captivity of a browser, you will now be able to run these widgets on 
 your Windows desktop as long as you have the correct widget engine installed.
-
-
 
  
 Instructions for running Yahoo widgets on Windows
