@@ -2,7 +2,7 @@
  
 Steampunk-Grid-Gauges Yahoo Widget, written in Javascript and XML for the Yahoo 
 Widget (Konfabulator) Engine. Created for XP, Vista, Win7, 8, 10+ as well as the 
-Apple Mac.
+Apple Mac. 
 
 ![steampunk-gauge02](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/a87bf362-1c7d-43d5-aec6-1e517c03e366)
 
