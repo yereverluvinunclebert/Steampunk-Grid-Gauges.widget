@@ -161,6 +161,10 @@
 		<image opacity="255" vOffset="270" opacity="0" name="spawnButton" alignment="left" src="Resources/Images/New Spawn.png"   width="32" hOffset="270" height="32" tooltip="Spawn a new instance of Steampunk Grid Gauges."/>
 
 	</window>
+	
+	<window visible="false" name="helpWindow" alignment="left" width="760" title="Steampunk Grid Gauge Help.png HELP" height="630" >
+	     <image src = "Resources/images/steampunkGridHelp.png" name = "gaugeHelp" visible = "true" />
+	</window>
 
   <prefGroup name="development" order="8" icon="Resources/images/development-icon.png" title="Development"/>
    <preference hidden="false" description="Turning on the debugging will provide extra information in the debug window. To obtain the debug window press SHIFT+CTRL simultaneously whilst right clicking on the Yahoo widget systray icon, then select debug from the drop down menu. You will need to restart the widget properly rather than doing a simple restart for debugging information to appear." name="debugflgPref" group="development" title="Debug:" defaultValue="1" type="popup">

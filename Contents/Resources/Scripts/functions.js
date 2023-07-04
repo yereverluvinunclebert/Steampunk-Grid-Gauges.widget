@@ -63,6 +63,13 @@ function setmenu() {
                 nullfunction();
             };
         items.push(mItem);
+        
+            mItem = new MenuItem();
+            mItem.title = "Steampunk Grid Gauge Help";
+            mItem.onSelect = function () {
+                helpShow();
+            };
+        items.push(mItem);
 
             mItem = new MenuItem();
             mItem.title = "See More Steampunk Widgets";
@@ -292,3 +299,19 @@ function performCommand(method) {
 //End function
 //=====================
 
+
+
+
+function helpShow() {
+    helpWindow.visible = true;
+//    if (preferences.soundPref.value !== "disabled") {
+        play(till, false);
+//    }
+}
+
+gaugeHelp.onMouseDown = function () {
+    helpWindow.visible = false;
+//    if (preferences.soundPref.value !== "disabled") {
+        play(ting, false);
+//    }
+};
