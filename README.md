@@ -97,7 +97,7 @@ Running the widget using a javascript engine frees javascript from running only
 within the captivity of a browser, you will now be able to run these widgets on 
 your Windows desktop as long as you have the correct widget engine installed.
 
- ![aboutus](https://github.com/yereverluvinunclebert/Steampunk-Moon_Phase_III/assets/2788342/a39bfd44-1f95-4800-a591-e68684ab5d42)
+ ![yahoo-logo-small_111](https://github.com/yereverluvinunclebert/Steampunk-MediaPlayer-Ywidget/assets/2788342/c5668608-ab57-4665-a332-3bc9b7e07a9f)
  
 Instructions for running Yahoo widgets on Windows
 =================================================
