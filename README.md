@@ -6,6 +6,8 @@ Apple Mac.
 
 ![steampunk-gauge02](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/a87bf362-1c7d-43d5-aec6-1e517c03e366)
 
+The core widget design.
+
 ![powerGridGauge002](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/80a7d4f4-90e8-4001-b386-2514eef753cf)
 
 Widget zoomed to maximum size.
@@ -67,7 +69,8 @@ provide.
 The electrical gauges take their data from this feed:
 	http://www.gridwatch.templar.co.uk/
 
-![steampunkGridAbout](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/b4504de3-c43b-4e3d-b2a2-4f5c3609cc6b)
+![steampunkGridAbout002](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/74e04ffd-3695-40fa-a86e-a92db5460a98)
+
 
 Built using: 
 
