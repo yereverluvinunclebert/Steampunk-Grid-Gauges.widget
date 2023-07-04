@@ -11,6 +11,11 @@ the UK electricity generating network. Functional and gorgeous at the same time.
 This Widget is a moveable widget that you can move anywhere around the desktop 
 as you require.
 
+When you first run the widget it will default to displaying the UK current 
+electricity consumption. A right click on the prefs will allow you to select 
+data relating to any method of generating or delivering electricity in the UK. It 
+can also display the current frequency in Hz.
+
 The graphics are my own. This widget was created with the serious coding skills 
 of Harry Whitfield. I supplied the graphics, made some ephemeral changes and 
 helped steered the widget toward its final goal. I also tested the widget and added 
