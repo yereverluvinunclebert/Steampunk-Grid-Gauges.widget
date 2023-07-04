@@ -71,8 +71,7 @@ provide.
 The electrical gauges take their data from this feed:
 	http://www.gridwatch.templar.co.uk/
 
-![steampunkGridAbout002](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/74e04ffd-3695-40fa-a86e-a92db5460a98)
-
+![steampunkGridAbout002](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/3fbff791-de73-4059-aa4e-32e02d817afe)
 
 Built using: 
 
