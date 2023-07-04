@@ -7,6 +7,7 @@ Apple Mac.
 ![steampunk-gauge02](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/a87bf362-1c7d-43d5-aec6-1e517c03e366)
 
 ![powerGridGauge002](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/80a7d4f4-90e8-4001-b386-2514eef753cf)
+
 Widget zoomed to maximum size.
 
 The Steampunk-Grid-Gauges widget is an attractive Steampunk Yahoo widget for 
@@ -32,7 +33,7 @@ ever would have.
 
 ![steampunkCoal](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/fb513bc1-671e-4bf4-af31-f2281635235a)
 
-The above gauge shows coal-consumption by the UK's coal-fired power stations, a real-time 
+The above gauge shows coal-power generation by the UK's coal-fired power stations, a real-time 
 gauge that takes its information via a real-time feed from powergen, the UK 
 national power generating organisation.
 
