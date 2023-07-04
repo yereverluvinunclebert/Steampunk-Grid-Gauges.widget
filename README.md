@@ -4,6 +4,8 @@ Steampunk-Grid-Gauges Yahoo Widget, written in Javascript and XML for the Yahoo
 Widget (Konfabulator) Engine. Created for XP, Vista, Win7, 8, 10+ as well as the 
 Apple Mac.
 
+![steampunk-gauge02](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/a87bf362-1c7d-43d5-aec6-1e517c03e366)
+
 
 The Steampunk-Grid-Gauges widget is an attractive Steampunk Yahoo widget for 
 your desktop. It is a series of electrical generation and consumption gauges for 
@@ -15,6 +17,9 @@ When you first run the widget it will default to displaying the UK current
 electricity consumption. A right click on the prefs will allow you to select 
 data relating to any method of generating or delivering electricity in the UK. It 
 can also display the current frequency in Hz.
+
+ ![steampunk-gauges02](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/5a46a53f-5be9-4171-9647-87e8d9f6c731)
+
 
 The graphics are my own. This widget was created with the serious coding skills 
 of Harry Whitfield. I supplied the graphics, made some ephemeral changes and 
