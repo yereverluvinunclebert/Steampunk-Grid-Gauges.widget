@@ -82,8 +82,7 @@ Tested on :
 	Windows XP SP3 32bit on Intel    
 	Windows 10 Home 64bit on Intel    
 	Windows 10 Home 64bit on AMD    
-	Windows 11 64bit on Intel  
-  
+	Windows 11 64bit on Intel    
    
  Dependencies:
  
@@ -98,6 +97,7 @@ Running the widget using a javascript engine frees javascript from running only
 within the captivity of a browser, you will now be able to run these widgets on 
 your Windows desktop as long as you have the correct widget engine installed.
 
+ ![aboutus](https://github.com/yereverluvinunclebert/Steampunk-Moon_Phase_III/assets/2788342/a39bfd44-1f95-4800-a591-e68684ab5d42)
  
 Instructions for running Yahoo widgets on Windows
 =================================================
