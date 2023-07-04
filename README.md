@@ -67,6 +67,7 @@ provide.
 The electrical gauges take their data from this feed:
 	http://www.gridwatch.templar.co.uk/
 
+![steampunkGridAbout](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/b4504de3-c43b-4e3d-b2a2-4f5c3609cc6b)
 
 Built using: 
 
@@ -131,6 +132,7 @@ Wit these instructions you should be able to start Yahoo! Widgets and the
 menubar item should appear. Widgets can then be started from the menubar or by 
 double-clicking on the KON file in the usual way.
 
+![steampunkGridHelp01](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/71a5b62a-85b7-4192-b38a-8e8090d64449)
 
 
 LICENCE AGREEMENTS:
