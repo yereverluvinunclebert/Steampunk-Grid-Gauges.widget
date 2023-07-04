@@ -6,6 +6,8 @@ Apple Mac.
 
 ![steampunk-gauge02](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/a87bf362-1c7d-43d5-aec6-1e517c03e366)
 
+![powerGridGauge002](https://github.com/yereverluvinunclebert/Steampunk-Grid-Gauges.widget/assets/2788342/80a7d4f4-90e8-4001-b386-2514eef753cf)
+Widget zoomed to maximum size.
 
 The Steampunk-Grid-Gauges widget is an attractive Steampunk Yahoo widget for 
 your desktop. It is a series of electrical generation and consumption gauges for 
@@ -80,8 +82,7 @@ Tested on :
 	Windows XP SP3 32bit on Intel    
 	Windows 10 Home 64bit on Intel    
 	Windows 10 Home 64bit on AMD    
-	Windows 11 64bit on Intel  
-  
+	Windows 11 64bit on Intel    
    
  Dependencies:
  
@@ -96,6 +97,7 @@ Running the widget using a javascript engine frees javascript from running only
 within the captivity of a browser, you will now be able to run these widgets on 
 your Windows desktop as long as you have the correct widget engine installed.
 
+ ![yahoo-logo-small_111](https://github.com/yereverluvinunclebert/Steampunk-MediaPlayer-Ywidget/assets/2788342/c5668608-ab57-4665-a332-3bc9b7e07a9f)
  
 Instructions for running Yahoo widgets on Windows
 =================================================
