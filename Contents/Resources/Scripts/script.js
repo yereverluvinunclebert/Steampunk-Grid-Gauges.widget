@@ -169,8 +169,6 @@ function thePreferencesChanged() {
     logFlagPref = preferences.logFlagPref.value;	// flag to control printing to file
 
 
-    print(">>>>>>>>>>>>>>>>>> gaugePref: " + gaugePref);
-
     scale = Number(preferences.scalePref.value) / 100;
     scaleWidget(scale);
 
@@ -183,7 +181,7 @@ function thePreferencesChanged() {
     }
 
     gaugePref = preferences.gaugePref.value;
-    print(">>>>>>>>>>>>>>>>>> gaugePref: " + gaugePref);
+    print("gaugePref: " + gaugePref);
     gaugeArray = gaugePref.split(" ");
 
     theURL = euURL;

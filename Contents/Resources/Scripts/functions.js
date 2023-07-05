@@ -12,7 +12,8 @@ function nullfunction() {
 //=====================
 
 //===========================================
-// this function causes explorer to be opened and the file selected
+// this function causes explorer to be opened 
+// to the relevant folder
 //===========================================
 function findWidget() {
 
@@ -39,61 +40,61 @@ function findWidget() {
 
 
 //=========================================================================
-// this function assigns 
+// this function assigns the menu items
 //=========================================================================
 function setmenu() {
     main_window.onContextMenu = function() {
         var items = [], mItem;
 
 
-            mItem = new MenuItem();
-            mItem.title = "Donate a Coffee with Ko-Fi";
-            mItem.onSelect = function () {
-                donate();
-            };
+        mItem = new MenuItem();
+        mItem.title = "Donate a Coffee with Ko-Fi";
+        mItem.onSelect = function () {
+            donate();
+        };
         items.push(mItem);
 
-            mItem = new MenuItem();
-            mItem.title = "";
-            mItem.onSelect = function () {
-                nullfunction();
-            };
+        mItem = new MenuItem();
+        mItem.title = "";
+        mItem.onSelect = function () {
+            nullfunction();
+        };
         items.push(mItem);
 
-            mItem = new MenuItem();
-            mItem.title = "Select Gauge Type";
+        mItem = new MenuItem();
+        mItem.title = "Select Gauge Type";
         items.push(mItem);
 
-            preferences.gaugePref.option.forEach(function (ele, idx) {
-                if (ele !== "-") {
-                    sItem = new MenuItem();
-                    sItem.title = ele.split(" ", 2).join(" ");
-                    sItem.onSelect = function () {
-                        selectGaugeType(idx);
-                    };
-                    mItem.appendChild(sItem);
-                }
-            });
+        preferences.gaugePref.option.forEach(function (ele, idx) {
+            if (ele !== "-") {
+                sItem = new MenuItem();
+                sItem.title = ele.split(" ", 2).join(" ");
+                sItem.onSelect = function () {
+                    selectGaugeType(idx);
+                };
+                mItem.appendChild(sItem);
+            }
+        });
 
-            mItem = new MenuItem();
-            mItem.title = "Steampunk Grid Gauge Help";
-            mItem.onSelect = function () {
-                helpShow();
-            };
+        mItem = new MenuItem();
+        mItem.title = "Steampunk Grid Gauge Help";
+        mItem.onSelect = function () {
+            helpShow();
+        };
          items.push(mItem);  
          
-             mItem = new MenuItem();
-             mItem.title = "";
-             mItem.onSelect = function () {
-                 nullfunction();
-             };
+        mItem = new MenuItem();
+        mItem.title = "";
+        mItem.onSelect = function () {
+            nullfunction();
+        };
          items.push(mItem);           
 
-            mItem = new MenuItem();
-            mItem.title = "Online Help";
-            mItem.onSelect = function () {
-                widgethelp();
-            };
+        mItem = new MenuItem();
+        mItem.title = "Online Help";
+        mItem.onSelect = function () {
+            widgethelp();
+        };
           
         items.push(mItem);
         
