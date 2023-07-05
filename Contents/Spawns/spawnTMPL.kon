@@ -159,9 +159,7 @@
 
     <image opacity="255" vOffset="270" opacity="0" name="closeButton" alignment="left" src="Resources/Images/Close Spawn.png" width="32" hOffset="8"   height="32" tooltip="Close this instance of Steampunk Grid Gauges."/>
     <image opacity="255" vOffset="270" opacity="0" name="spawnButton" alignment="left" src="Resources/Images/New Spawn.png"   width="32" hOffset="270" height="32" tooltip="Spawn a new instance of Steampunk Grid Gauges."/>
-    <contextMenuItems>
-      <menuItem onSelect="displayLicense();" title="Bumfluff"/>
-    </contextMenuItems>
+
 	</window>
 	  
    <window visible="false" name="helpWindow" alignment="left" width="760" title="Steampunk Grid Gauge Help.png HELP" height="630" >

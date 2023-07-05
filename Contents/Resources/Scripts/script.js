@@ -151,14 +151,8 @@ function scaleWidget(scale) {
     scTxt(text2, 152, 155, 26, 11, 0, 82, 11);
     scTxt(text1, 152, 155, 26, 11, 0, 81, 11);
 
-    if (preferences.noRingPref.value === "1") {
-        sc(closeButton, 70, 230);
-        sc(spawnButton, 200, 230);
-    } else {
-        sc(closeButton, 8, 250);
-        sc(spawnButton, 270, 250);
-    }
-
+    sc(closeButton, 70, 230);
+    sc(spawnButton, 200, 230);
 
 }
 
