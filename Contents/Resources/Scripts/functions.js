@@ -39,7 +39,7 @@ function findWidget() {
 
 
 //=========================================================================
-// this function assigns translations to preference descriptions and titles
+// this function assigns 
 //=========================================================================
 function setmenu() {
     main_window.onContextMenu = function() {
@@ -69,7 +69,7 @@ function setmenu() {
                     sItem = new MenuItem();
                     sItem.title = ele.split(" ", 2).join(" ");
                     sItem.onSelect = function () {
-                        selectGaugeType();
+                        selectGaugeType(idx);
                     };
                     mItem.appendChild(sItem);
                 }
@@ -174,11 +174,12 @@ function setmenu() {
 
 
 //=========================================================================
-// this function assigns translations to preference descriptions and titles
+// this function assigns 
 //=========================================================================
-function selectGaugeType() {
+function selectGaugeType(index) {
 
-
+    preferences.gaugePref.value = preferences.gaugePref.optionValue[index];
+    thePreferencesChanged();
 };
 //=====================
 //End function

@@ -157,8 +157,19 @@ function scaleWidget(scale) {
 }
 
 widget.onPreferencesChanged = function () {
-	logFilePref = preferences.logFilePref.value;	// path to log file
+    thePreferencesChanged();
+
+};
+
+//=========================================================================
+// this function assigns 
+//=========================================================================
+function thePreferencesChanged() {
+    logFilePref = preferences.logFilePref.value;	// path to log file
     logFlagPref = preferences.logFlagPref.value;	// flag to control printing to file
+
+
+    print(">>>>>>>>>>>>>>>>>> gaugePref: " + gaugePref);
 
     scale = Number(preferences.scalePref.value) / 100;
     scaleWidget(scale);
@@ -172,7 +183,7 @@ widget.onPreferencesChanged = function () {
     }
 
     gaugePref = preferences.gaugePref.value;
-    eprint("gaugePref: " + gaugePref);
+    print(">>>>>>>>>>>>>>>>>> gaugePref: " + gaugePref);
     gaugeArray = gaugePref.split(" ");
 
     theURL = euURL;
@@ -219,8 +230,9 @@ widget.onPreferencesChanged = function () {
         updatePlist();  // rewrite Plist of spawned widget
     }
 
-	theClockTimer.interval = 1;
+    theClockTimer.interval = 1;
 };
+
 
 widget.onUnload = function () {
     elog("Widget Closed");
