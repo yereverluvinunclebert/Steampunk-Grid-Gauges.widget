@@ -73,7 +73,6 @@ function setmenu() {
                     };
                     mItem.appendChild(sItem);
                 }
-                //	eprint('"' + gaugeOptions[idx] + '"');
             });
 
             mItem = new MenuItem();
