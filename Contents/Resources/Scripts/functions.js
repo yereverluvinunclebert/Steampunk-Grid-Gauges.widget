@@ -44,8 +44,7 @@ function findWidget() {
 //=========================================================================
 function setmenu() {
     main_window.onContextMenu = function() {
-        var items = [], mItem;
-
+        var items = [], sItem, mItem;
 
         mItem = new MenuItem();
         mItem.title = "Donate a Coffee with Ko-Fi";
@@ -98,60 +97,60 @@ function setmenu() {
           
         items.push(mItem);
         
-            mItem = new MenuItem();
-            mItem.title = "See More Steampunk Widgets";
-            mItem.onSelect = function () {
-                otherwidgets();
-            };
+        mItem = new MenuItem();
+        mItem.title = "See More Steampunk Widgets";
+        mItem.onSelect = function () {
+            otherwidgets();
+        };
         items.push(mItem);
 
-            mItem = new MenuItem();
-            mItem.title = "Download Latest Version";
-            mItem.onSelect = function () {
-                update();
-            };
+        mItem = new MenuItem();
+        mItem.title = "Download Latest Version";
+        mItem.onSelect = function () {
+            update();
+        };
         items.push(mItem);
 
-            mItem = new MenuItem();
-            mItem.title = "Display Licence Agreement...";
-            mItem.onSelect = function () {
-                displayLicence();
-            };
+        mItem = new MenuItem();
+        mItem.title = "Display Licence Agreement...";
+        mItem.onSelect = function () {
+            displayLicence();
+        };
         items.push(mItem);
 
-            mItem = new MenuItem();
-            mItem.title = "Contact Support";
-            mItem.onSelect = function () {
-                contact();
-            };
+        mItem = new MenuItem();
+        mItem.title = "Contact Support";
+        mItem.onSelect = function () {
+            contact();
+        };
         items.push(mItem);
 
-            mItem = new MenuItem();
-            mItem.title = "";
-            mItem.onSelect = function() {
-                nullfunction();
-            };
+        mItem = new MenuItem();
+        mItem.title = "";
+        mItem.onSelect = function() {
+            nullfunction();
+        };
         items.push(mItem);
 
-            mItem = new MenuItem();
-            mItem.title = "Reveal Widget in Windows Explorer";
-            mItem.onSelect = function() {
-                findWidget();
-            };
+        mItem = new MenuItem();
+        mItem.title = "Reveal Widget in Windows Explorer";
+        mItem.onSelect = function() {
+            findWidget();
+        };
         items.push(mItem);
 
-            mItem = new MenuItem();
-            mItem.title = "";
-            mItem.onSelect = function() {
-                nullfunction();
-            };
+        mItem = new MenuItem();
+        mItem.title = "";
+        mItem.onSelect = function() {
+            nullfunction();
+        };
         items.push(mItem);
 
-            mItem = new MenuItem();
-            mItem.title = "Reload Widget (F5)";
-            mItem.onSelect = function () {
-                reloadWidget();
-            };
+        mItem = new MenuItem();
+        mItem.title = "Reload Widget (F5)";
+        mItem.onSelect = function () {
+            reloadWidget();
+        };
         items.push(mItem);
 
         if (preferences.imageEditPref.value != "" && debugFlg === "1") {
@@ -175,10 +174,9 @@ function setmenu() {
 
 
 //=========================================================================
-// this function assigns 
+// this function sets the current gauge type according to the user choice 
 //=========================================================================
 function selectGaugeType(index) {
-
     preferences.gaugePref.value = preferences.gaugePref.optionValue[index];
     thePreferencesChanged();
 };
@@ -192,11 +190,11 @@ function selectGaugeType(index) {
 // this function defines the keyboard events captured
 //===============================================================
 main_window.onKeyDown = function(event) {
-                if (system.event.keyCode==116) {
-                    print("pressing "+system.event.keyCode);
-                    reloadWidget();
-                }
-   };
+    if (system.event.keyCode==116) {
+        print("pressing "+system.event.keyCode);
+        reloadWidget();
+    }
+};
 //=====================
 //End function
 //=====================
@@ -345,6 +343,9 @@ function performCommand(method) {
 
 
 
+//=====================
+// function to show the help window form
+//=====================
 function helpShow() {
     helpWindow.visible = true;
     print (preferences.soundPref.value);
@@ -352,7 +353,14 @@ function helpShow() {
         play(till, false);
     }
 }
+//=====================
+//End function
+//=====================
 
+
+//=====================
+// function to hide the help form
+//=====================
 gaugeHelp.onMouseDown = function () {
     helpWindow.visible = false;
     if (preferences.soundPref.value !== "disabled") {

@@ -162,7 +162,7 @@ widget.onPreferencesChanged = function () {
 };
 
 //=========================================================================
-// this function assigns 
+// this function sets the characteristics after the prefs have been changed  
 //=========================================================================
 function thePreferencesChanged() {
     logFilePref = preferences.logFilePref.value;	// path to log file
@@ -230,7 +230,9 @@ function thePreferencesChanged() {
 
     theClockTimer.interval = 1;
 };
-
+//=====================
+//End function
+//=====================
 
 widget.onUnload = function () {
     elog("Widget Closed");
