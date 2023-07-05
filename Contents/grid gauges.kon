@@ -166,7 +166,7 @@
 	     <image src = "Resources/images/steampunkGridHelp.png" name = "gaugeHelp" visible = "true" />
 	</window>
 
-  <prefGroup name="development" order="8" icon="Resources/images/development-icon.png" title="Development"/>
+  <prefGroup name="development" order="3" icon="Resources/images/development-icon.png" title="Development"/>
    <preference hidden="false" description="Turning on the debugging will provide extra information in the debug window. To obtain the debug window press SHIFT+CTRL simultaneously whilst right clicking on the Yahoo widget systray icon, then select debug from the drop down menu. You will need to restart the widget properly rather than doing a simple restart for debugging information to appear." name="debugflgPref" group="development" title="Debug:" defaultValue="1" type="popup">
         <option>Debug OFF</option>
         <optionValue>0</optionValue>
@@ -176,7 +176,12 @@
    <preference hidden="false" description="Default command to run when the gauge receives a double-click. %SystemRoot%/system32/perfmon.exe" name="imageCmdPref" group="development" title="Double-Click command" defaultValue="%SystemRoot%/system32/perfmon.exe" type="text"/>
    <preference hidden="false" description="Development ONLY: Enter your editor path here along with any command line switches required to open this widget in the editor. This function only operates if the widget has been unpacked and DEBUG is ON. " name="imageEditPref" group="development" title="Default Editor:" defaultValue="" type="text"/>
 
-
+  <prefGroup name="sounds" icon="Resources/images/soundsPref.png" order="2" title="Sounds"/>
+  <preference hidden="false" group="sounds" description="This widget makes sounds by default - you can enable or disable the sounds as you require." name="soundPref" title="Sound Control" defaultValue="enabled" type="popup">
+    <option>enabled</option>
+    <option>disabled</option>
+  </preference>
+  
 	<action trigger="onLoad">
 		<![CDATA[
 		include('Resources/Scripts/functions.js');

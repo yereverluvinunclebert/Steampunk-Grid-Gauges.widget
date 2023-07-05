@@ -1,3 +1,5 @@
+var till = "Resources/sounds/till01.mp3";
+var ting = "Resources/sounds/ting.mp3";
 
 //===========================================
 // this function allows a spacer in the menu
@@ -43,12 +45,6 @@ function setmenu() {
     main_window.onContextMenu = function() {
         var items = [], mItem;
 
-//            mItem = new MenuItem();
-//            mItem.title = "Online Help";
-//            mItem.onSelect = function () {
-//                widgethelp();
-//            };
-//        items.push(mItem);
 
             mItem = new MenuItem();
             mItem.title = "Donate a Coffee with Ko-Fi";
@@ -63,14 +59,45 @@ function setmenu() {
                 nullfunction();
             };
         items.push(mItem);
-        
+
+            mItem = new MenuItem();
+            mItem.title = "Select Gauge Type";
+        items.push(mItem);
+
+            preferences.gaugePref.option.forEach(function (ele, idx) {
+                if (ele !== "-") {
+                    sItem = new MenuItem();
+                    sItem.title = ele.split(" ", 2).join(" ");
+                    sItem.onSelect = function () {
+                        selectGaugeType();
+                    };
+                    mItem.appendChild(sItem);
+                }
+                //	eprint('"' + gaugeOptions[idx] + '"');
+            });
+
             mItem = new MenuItem();
             mItem.title = "Steampunk Grid Gauge Help";
             mItem.onSelect = function () {
                 helpShow();
             };
-        items.push(mItem);
+         items.push(mItem);  
+         
+             mItem = new MenuItem();
+             mItem.title = "";
+             mItem.onSelect = function () {
+                 nullfunction();
+             };
+         items.push(mItem);           
 
+            mItem = new MenuItem();
+            mItem.title = "Online Help";
+            mItem.onSelect = function () {
+                widgethelp();
+            };
+          
+        items.push(mItem);
+        
             mItem = new MenuItem();
             mItem.title = "See More Steampunk Widgets";
             mItem.onSelect = function () {
@@ -128,12 +155,12 @@ function setmenu() {
         items.push(mItem);
 
         if (preferences.imageEditPref.value != "" && debugFlg === "1") {
-                mItem = new MenuItem();
-                mItem.title = "Edit Widget using " + preferences.imageEditPref.value ;
-                mItem.onSelect = function () {
-                    editWidget();
-                };
-                items.push(mItem);
+            mItem = new MenuItem();
+            mItem.title = "Edit Widget using " + preferences.imageEditPref.value ;
+            mItem.onSelect = function () {
+                editWidget();
+            };
+            items.push(mItem);
         }
 
         main_window.contextMenuItems = items;
@@ -143,6 +170,21 @@ function setmenu() {
 //=====================
 //End function
 //=====================
+
+
+
+
+//=========================================================================
+// this function assigns translations to preference descriptions and titles
+//=========================================================================
+function selectGaugeType() {
+
+
+};
+//=====================
+//End function
+//=====================
+
 
 
 //===============================================================
@@ -304,14 +346,15 @@ function performCommand(method) {
 
 function helpShow() {
     helpWindow.visible = true;
-//    if (preferences.soundPref.value !== "disabled") {
+    print (preferences.soundPref.value);
+    if (preferences.soundPref.value !== "disabled") {
         play(till, false);
-//    }
+    }
 }
 
 gaugeHelp.onMouseDown = function () {
     helpWindow.visible = false;
-//    if (preferences.soundPref.value !== "disabled") {
+    if (preferences.soundPref.value !== "disabled") {
         play(ting, false);
-//    }
+    }
 };

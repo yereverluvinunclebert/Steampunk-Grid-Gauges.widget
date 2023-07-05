@@ -60,8 +60,6 @@ function hideButtons() {
 	}
 }
 
-//widget.onGainFocus = showButtons;
-//widget.onLoseFocus = hideButtons;
 
 gaugeBody.onMouseEnter = showButtons;
 gaugeBody.onMouseExit = hideButtons;
