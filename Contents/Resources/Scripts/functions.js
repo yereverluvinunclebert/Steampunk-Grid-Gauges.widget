@@ -91,25 +91,36 @@ function setmenu() {
 
         mItem = new MenuItem();
         mItem.title = "Online Help";
-        mItem.onSelect = function () {
-            widgethelp();
-        };
-          
         items.push(mItem);
         
-        mItem = new MenuItem();
-        mItem.title = "See More Steampunk Widgets";
-        mItem.onSelect = function () {
-            otherwidgets();
-        };
-        items.push(mItem);
+              sItem = new MenuItem();
+              sItem.title = "See More Steampunk Widgets";
+              sItem.onSelect = function () {
+                  otherWidgets();
+              };
+              mItem.appendChild(sItem);
 
-        mItem = new MenuItem();
-        mItem.title = "Download Latest Version";
-        mItem.onSelect = function () {
-            update();
-        };
-        items.push(mItem);
+              sItem = new MenuItem();
+              sItem.title = "Download Latest Version";
+              sItem.onSelect = function () {
+                  update();
+              };
+              mItem.appendChild(sItem);
+
+              sItem = new MenuItem();
+              sItem.title = "Contact Support";
+              sItem.onSelect = function () {
+                  contact();
+              };
+              mItem.appendChild(sItem);
+
+              sItem = new MenuItem();
+              sItem.title = "Chat about Steampunk Widgets on Facebook";
+              sItem.onSelect = function() {
+                  facebookChat();
+              };
+        mItem.appendChild(sItem);
+        
 
         mItem = new MenuItem();
         mItem.title = "Display Licence Agreement...";
@@ -118,12 +129,6 @@ function setmenu() {
         };
         items.push(mItem);
 
-        mItem = new MenuItem();
-        mItem.title = "Contact Support";
-        mItem.onSelect = function () {
-            contact();
-        };
-        items.push(mItem);
 
         mItem = new MenuItem();
         mItem.title = "";
@@ -234,7 +239,7 @@ function donate() {
 //===========================================
 // this function opens other widgets URL
 //===========================================
-function menuitem5OnClick() {
+function otherWidgets() {
     var answer = alert("This button opens a browser window and connects to the Steampunk widgets page on my site. Do you wish to proceed", "Open Browser Window", "No Thanks");
 
     if (answer === 1) {
@@ -251,7 +256,7 @@ function update() {
     var answer = alert("Download latest version of the widget - this button opens a browser window and connects to the widget download page where you can check and download the latest zipped .WIDGET file). Proceed?", "Open Browser Window", "No Thanks");
 
     if (answer === 1) {
-        openURL("https://www.deviantart.com/yereverluvinuncleber/art/Steampunk-Coal-Power-Gauge-shows-real-consumption-609211016");
+        openURL("https://www.deviantart.com/yereverluvinuncleber/art/Steampunk-Resource-Monitor-Yahoo-Widget-353796509");
     }
 }
 //=====================
@@ -282,7 +287,7 @@ function facebookChat() {
 }
 //=====================
 //End function
-//=====================
+//===================== 
 
 
 
